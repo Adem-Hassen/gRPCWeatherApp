@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package weather;
+
+// The weather service definition.
+service WeatherService {
+  // Get the current weather for a location.
+  rpc GetCurrentWeather (WeatherRequest) returns (WeatherResponse);
+}
+
+// The request message containing the location.
+message WeatherRequest {
+  string location = 1;
+}
+
+// The response message containing the weather data.
+message WeatherResponse {
+  float temperature = 1;
+  float humidity = 2;
+  string condition = 3;
+}
