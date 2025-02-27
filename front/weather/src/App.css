@@ -1,4 +1,3 @@
-/* App.css */
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
@@ -15,7 +14,7 @@ body {
   padding: 30px;
   border-radius: 15px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  max-width: 500px;
+  max-width: 1000px;
   width: 100%;
 }
 
@@ -30,6 +29,8 @@ body {
 }
 
 .input {
+  background-color: #e4e1e1;
+  color:#333;
   padding: 12px;
   font-size: 1rem;
   width: 70%;
@@ -88,3 +89,52 @@ body {
   color: #333;
   margin: 10px 0;
 }
+.weatherHistoryContainer {
+  margin-top: 20px;
+}
+
+.horizontalScroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.weatherCard {
+  flex: 0 0 auto;
+  width: 250px;
+  padding: 10px;
+  margin: 7px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: left; }
+
+.weatherText {
+  margin: 5px 0;
+}
+
+.clearButton {
+  background-color: #00d607; 
+  margin-left: 10px;
+}
+
+.clearButton:hover {
+  background-color: #07b10d; 
+}
+
+.stopButton{
+  background-color: grey;
+  
+  margin-left: 10px;
+
+}
+.stopButton:hover{
+  background-color: #ccc;
+  color:#333;
+}
+
